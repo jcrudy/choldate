@@ -3,18 +3,34 @@ choldate
 
 Somewhat fast updating and downdating of Cholesky factors in Python
 
-##installation
+## Installation
 
-Install from GitHub: `pip install git+git://github.com/jcrudy/choldate.git`
+### From GitHub
+```sh
+pip install git+https://github.com/jcrudy/choldate.git
+```
 
-Or, clone the GitHub repository and install from source, e.g.,
+### From source
+```sh
+git clone https://github.com/jcrudy/choldate.git
+cd choldate
+pip install .
+```
 
-1. `git clone git://github.com/jcrudy/choldate.git`
-2. `cd choldate; python setup.py install`
+For an editable (development) install:
+```sh
+pip install -e .
+```
 
-I am new to packaging Python modules.  If it doesn't work on your system, get in touch and I'll try to help you.
+To install with Cython (required only if you need to rebuild the C extension from the `.pyx` source):
+```sh
+pip install -e .[build]
+```
 
-##usage
+**Requirements:** Python >= 3.8, NumPy. Cython is optional (used automatically when available and when `_choldate.pyx` is present).
+
+## usage
+
 ```python
 from choldate import cholupdate, choldowndate
 import numpy
