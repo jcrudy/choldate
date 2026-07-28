@@ -4,15 +4,13 @@
 {
     "distutils": {
         "depends": [
-            "/home/wandrille/micromamba/envs/py312/lib/python3.12/site-packages/numpy/_core/include/numpy/arrayobject.h",
-            "/home/wandrille/micromamba/envs/py312/lib/python3.12/site-packages/numpy/_core/include/numpy/arrayscalars.h",
-            "/home/wandrille/micromamba/envs/py312/lib/python3.12/site-packages/numpy/_core/include/numpy/ndarrayobject.h",
-            "/home/wandrille/micromamba/envs/py312/lib/python3.12/site-packages/numpy/_core/include/numpy/ndarraytypes.h",
-            "/home/wandrille/micromamba/envs/py312/lib/python3.12/site-packages/numpy/_core/include/numpy/ufuncobject.h"
+            "numpy/arrayobject.h",
+            "numpy/arrayscalars.h",
+            "numpy/ndarrayobject.h",
+            "numpy/ndarraytypes.h",
+            "numpy/ufuncobject.h"
         ],
-        "include_dirs": [
-            "/home/wandrille/micromamba/envs/py312/lib/python3.12/site-packages/numpy/_core/include"
-        ],
+        "include_dirs": [],
         "name": "choldate._choldate",
         "sources": [
             "choldate/_choldate.pyx"
